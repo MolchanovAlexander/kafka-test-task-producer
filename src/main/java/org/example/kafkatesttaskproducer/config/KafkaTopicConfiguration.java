@@ -25,4 +25,9 @@ public class KafkaTopicConfiguration {
     public NewTopic newTopic() {
         return new NewTopic("mike", 1, (short) 1);
     }
+
+    @Bean
+    public NewTopic uuidTopic() {
+        return new NewTopic("uuid_topic", 1, (short) 1);
+    }
 }

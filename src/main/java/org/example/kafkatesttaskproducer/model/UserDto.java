@@ -3,13 +3,13 @@ package org.example.kafkatesttaskproducer.model;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
+import java.util.UUID;
 import lombok.Data;
 
 @Data
-
 public class UserDto {
 
-    private String id;
+    private UUID id;
     @Email
     private String email;
     @NotBlank
